@@ -18,22 +18,23 @@ opt.shiftwidth = 4
 opt.tabstop = 4
 opt.softtabstop = 4
 opt.smartindent = true
+
+-- Text
 opt.wrap = true
+cmd('au VimEnter * RainbowParenthesesToggleAll') -- Activate Rainbow Parentheses
 
 -- Color Theme
-g.gruvbox_contrast_dark = "hard"
 
-g.everforest_enable_italic = 1
-g.everforest_transparent_background = 1
-g.everforest_ui_contrast = 'high'
-g.everforst_better_performance = 1
+-- Gruvbox Material
+require('apophis14.themes.gruvboxMaterial')
+-- Edge
+--require('apophis14.themes.edge')
+-- OneDark
+--require('apophis14.themes.oneDark')
+-- OneDarkPro
+--require('apophis14.themes.oneDarkPro')
 
-g.onedark_termcolors = 256
-g.onedark_terminal_italics = 1
-
-cmd('colorscheme onedark')
-cmd('set background=dark')
 
 -- Indent Guides
 g.indent_guides_enable_on_vim_startup = 1
-
+	
